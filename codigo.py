@@ -33,17 +33,20 @@ def descifrado_cesar(texto, desplazamiento):
 
 def main():
   opcion = input("¿Desea cifrar o descifrar un texto? (cifrar/descifrar): ").strip().lower()
-  desplazamiento = int(input("Ingrese el desplazamiento (n): "))
-  texto = input("Ingrese el texto a transformar: ").upper()  # Conversion a mayúsculas
+  
 
   if opcion == "cifrar":
+    desplazamiento = int(input("Ingrese el desplazamiento (n): "))
+    texto = input("Ingrese el texto a transformar: ").upper()  # Conversion a mayúsculas
     textoCifrado = cifrado_cesar(texto, desplazamiento)
     print("Texto cifrado:", textoCifrado)
   elif opcion == "descifrar":
+    desplazamiento = int(input("Ingrese el desplazamiento (n): "))
+    texto = input("Ingrese el texto a transformar: ").upper()  # Conversion a mayúsculas
     textoCifrado = descifrado_cesar(texto, desplazamiento)
     print("Texto descifrado:", textoCifrado)
   else:
     print("Opción no válida.")
-    return
-
-main()
+    
+while True:
+  main()
