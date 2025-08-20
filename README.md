@@ -2,7 +2,7 @@
 
 Practica 1 Criptografía
 
-¿Qué hicimos? En código c, realizamos un encriptador y desencriptador de palabras basado en el cifrado de Cesar.
+¿Qué hicimos? En Python, realizamos un encriptador y desencriptador de palabras basado en el cifrado de Cesar.
 
 ¿Cómo lo hicimos? se determinaron los caracteres con mayúsculas y minúscula y se consideró la letra ñ como 165 en código ASCII.
 Después ponemos el número total de letras que son 27 (contando la ñ), a la cual a cada una se le asignó un número del 0 al 26 a cada letra, dependiendo de su posición, es decir a=0, b=1, ..., z=26 ahí mismo se determinará si es o no es un carácter valido de una letra del alfabeto.
